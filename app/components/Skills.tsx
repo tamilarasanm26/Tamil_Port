@@ -17,11 +17,9 @@ const Skills = ({ directionLeft }: Props) => {
       <h3 className='absolute top-24 md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl'>
         Skills
       </h3>
-{/*       <h3 className="absolute top-36 upper tracking-[3px] text-gray-500 text-sm"
-      
-      >
+      <h3 className="absolute top-36 upper tracking-[3px] text-gray-500 text-sm">
         Using the latest tech this world has to offer
-      </h3> */}
+      </h3>
       <br />
       <br />
       <div className="grid grid-cols-4 gap-5"
