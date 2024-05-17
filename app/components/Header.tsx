@@ -49,6 +49,9 @@ export default function Header() {
         bgColor='transparent'
         url="https://www.facebook.com/profile.php?id=100036620281385"
          /> {/* Make sure to add http:// or https:// */}
+         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' download href="/Tamilarasan M.pdf">
+        CV
+      </a>
       </motion.div>
 
 <Link href="#contact">
