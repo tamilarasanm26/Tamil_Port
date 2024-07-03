@@ -45,10 +45,12 @@ function Projects({}: Props) {
             alt='keyboard app'
           />
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+           <a href="https://github.com/tamilarasanm26/Simple-keyboard">
             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 2 of 5:</span>{" "}
               Simple Keyboard
             </h5>
+           </a>
           </div>
         </div>
         <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
@@ -62,10 +64,12 @@ function Projects({}: Props) {
             alt='Fitx app'
           />
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+           <a href="https://github.com/tamilarasanm26/FITX">
             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 3 of 5:</span>{" "}
               FITX Application
             </h5>
+           </a>
           </div>
         </div>
         <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
@@ -79,10 +83,12 @@ function Projects({}: Props) {
             alt='Fitx app'
           />
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+           <a href="https://github.com/VigneshKandasamyOfficial/dairy_lush">
             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 4 of 5:</span>{" "}
               Dairy Lush
             </h5>
+           </a>
           </div>
         </div>
         <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
@@ -96,10 +102,12 @@ function Projects({}: Props) {
             alt='Fitx app'
           />
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+           <a href="https://github.com/tamilarasanm26/Classification-of-dementia-disease-using-deep-learning-techniques">
             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 5 of 5:</span>{" "}
                Classification of dementia disease
             </h5>
+           </a>
           </div>
         </div>
 
