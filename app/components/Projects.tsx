@@ -25,10 +25,12 @@ function Projects({}: Props) {
             alt='Language learning app'
           />
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-            <h5 className='text-1xl font-semibold text-center'>
+            <a href="https://github.com/tamilarasanm26/Language_Learning_application">
+             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 1 of 5:</span>{" "}
               Language Learning App
             </h5>
+            </a>
           </div>
         </div>
 
