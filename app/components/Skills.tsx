@@ -14,12 +14,11 @@ const Skills = ({ directionLeft }: Props) => {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
-      <h3 className='absolute top-24 md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl'>
+      <h5 className='absolute top-24 md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl'>
         Skills
-      </h3>
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        Using the latest tech this world has to offer
-      </h3>
+      </h5>
+      <br></br>
+      <br></br>
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 mt-16 md:mt-20">
         {[
           { src: '/c.jpeg', alt: 'C' },
@@ -28,6 +27,7 @@ const Skills = ({ directionLeft }: Props) => {
           { src: '/css.png', alt: 'CSS' },
           { src: '/js.jpeg', alt: 'JavaScript' },
           { src: '/react.png', alt: 'React' },
+         { src: '/php.png', alt: 'PHP' },
           { src: '/mongo.jpg', alt: 'MongoDB' },
           { src: '/mys.jpeg', alt: 'MySQL' },
           { src: '/framer.png', alt: 'Framer' },
