@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 type Props = {};
 
@@ -15,21 +15,21 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Language Learning App',
-    description: 'A mobile application designed to help users learn new languages through interactive lessons and quizzes.',
+    description: 'A web application designed to help children to learn languages through interactive lessons and practices.',
     imgSrc: '/lang.png',
     link: 'https://github.com/tamilarasanm26/Language_Learning_application',
   },
   {
     id: 2,
     title: 'Simple Keyboard',
-    description: 'A simple yet efficient keyboard application for Android devices, offering customization and enhanced typing experience.',
+    description: 'A simple keyboard app for Android devices, offering customization and to protect device from fileless malware.',
     imgSrc: 'key.png',
     link: 'https://github.com/tamilarasanm26/Simple-keyboard',
   },
   {
     id: 3,
     title: 'FITX Application',
-    description: 'A fitness tracking application that helps users monitor their workouts and health metrics.',
+    description: 'A fitx application is website for manage gym equipment and  that helps admin to monitor gym equipment.',
     imgSrc: 'fit.png',
     link: 'https://github.com/tamilarasanm26/FITX',
   },
@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: 'Classification of Dementia Disease',
-    description: 'A deep learning project aimed at classifying dementia diseases using advanced techniques.',
+    description: 'Research and development project for classifying different stage dementia using deep learning techniques.',
     imgSrc: 'dementia.png',
     link: 'https://github.com/tamilarasanm26/Classification-of-dementia-disease-using-deep-learning-techniques',
   },
@@ -88,11 +88,11 @@ function Projects({}: Props) {
               className='cursor-pointer'
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-              <a href={project.link}>
+              {/* <a href={project.link}> */}
                 <h5 className='text-1xl font-semibold text-center'>
                   <span className='underline decoration-[#F7AB0A]/50'>Project {project.id} of 5:</span> {project.title}
                 </h5>
-              </a>
+              {/* </a> */}
             </div>
           </div>
         ))}
@@ -115,7 +115,7 @@ function Projects({}: Props) {
               >
                 &times;
               </button>
-              <h3 className='text-2xl font-semibold mb-2'>{selectedProject.title}</h3>
+              <h3 className='text-2xl font-semibold mb-2 mt-2.5'>{selectedProject.title}</h3>
               <p className='mb-4'>{selectedProject.description}</p>
               <a href={selectedProject.link} className='inline-block bg-[#F7AB0A] text-white py-2 px-4 rounded-lg shadow hover:bg-[#e39a00]'>
                 View Project
