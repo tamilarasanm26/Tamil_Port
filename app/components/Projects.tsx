@@ -79,7 +79,7 @@ function Projects({}: Props) {
           <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
             <h5 className='text-1xl font-semibold text-center'>
               <span className='underline decoration-[#F7AB0A]/50'>Project 4 of 5:</span>{" "}
-              Dairy Lush
+              Dairy Lush Website
             </h5>
           </div>
         </div>
