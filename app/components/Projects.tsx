@@ -1,10 +1,67 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type Props = {};
 
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  imgSrc: string;
+  link: string;
+};
+
+const projects: Project[] = [
+  {
+    id: 1,
+    title: 'Language Learning App',
+    description: 'A mobile application designed to help users learn new languages through interactive lessons and quizzes.',
+    imgSrc: '/lang.png',
+    link: 'https://github.com/tamilarasanm26/Language_Learning_application',
+  },
+  {
+    id: 2,
+    title: 'Simple Keyboard',
+    description: 'A simple yet efficient keyboard application for Android devices, offering customization and enhanced typing experience.',
+    imgSrc: 'key.png',
+    link: 'https://github.com/tamilarasanm26/Simple-keyboard',
+  },
+  {
+    id: 3,
+    title: 'FITX Application',
+    description: 'A fitness tracking application that helps users monitor their workouts and health metrics.',
+    imgSrc: 'fit.png',
+    link: 'https://github.com/tamilarasanm26/FITX',
+  },
+  {
+    id: 4,
+    title: 'Dairy Lush Website',
+    description: 'A website developed for a dairy business to manage their products and customer orders efficiently.',
+    imgSrc: 'DL.png',
+    link: 'https://github.com/VigneshKandasamyOfficial/dairy_lush',
+  },
+  {
+    id: 5,
+    title: 'Classification of Dementia Disease',
+    description: 'A deep learning project aimed at classifying dementia diseases using advanced techniques.',
+    imgSrc: 'dementia.png',
+    link: 'https://github.com/tamilarasanm26/Classification-of-dementia-disease-using-deep-learning-techniques',
+  },
+];
+
 function Projects({}: Props) {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleImageClick = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  const handleCloseCard = () => {
+    setSelectedProject(null);
+  };
+
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -13,108 +70,60 @@ function Projects({}: Props) {
       <h3 className='absolute top-24 md:top-24 uppercase tracking-[20px] text-gray-500 text-lg md:text-2xl'>
         Projects
       </h3>
-      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-10 md:mt-20  scrollbar-thin  scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-          <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            style={{ maxWidth: '300px', maxHeight: '100%' }}
-            src='/lang.png'
-            alt='Language learning app'
-          />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-            <a href="https://github.com/tamilarasanm26/Language_Learning_application">
-             <h5 className='text-1xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>Project 1 of 5:</span>{" "}
-              Language Learning App
-            </h5>
-            </a>
+      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-10 md:mt-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'
+          >
+            <motion.img
+              initial={{ y: -300, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              style={{ maxWidth: '300px', maxHeight: '100%' }}
+              src={project.imgSrc}
+              alt={project.title}
+              onClick={() => handleImageClick(project)}
+              className='cursor-pointer'
+            />
+            <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+              <a href={project.link}>
+                <h5 className='text-1xl font-semibold text-center'>
+                  <span className='underline decoration-[#F7AB0A]/50'>Project {project.id} of 5:</span> {project.title}
+                </h5>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-          <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            style={{ maxWidth: '300px', maxHeight: '100%' }}
-            src='key.png'
-            alt='keyboard app'
-          />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-           <a href="https://github.com/tamilarasanm26/Simple-keyboard">
-            <h5 className='text-1xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>Project 2 of 5:</span>{" "}
-              Simple Keyboard
-            </h5>
-           </a>
-          </div>
-        </div>
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-          <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            style={{ maxWidth: '300px', maxHeight: '100%' }}
-            src='fit.png'
-            alt='Fitx app'
-          />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-           <a href="https://github.com/tamilarasanm26/FITX">
-            <h5 className='text-1xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>Project 3 of 5:</span>{" "}
-              FITX Application
-            </h5>
-           </a>
-          </div>
-        </div>
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-          <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            style={{ maxWidth: '250px', maxHeight: '100%' }}
-            src='DL.png'
-            alt='Fitx app'
-          />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-           <a href="https://github.com/VigneshKandasamyOfficial/dairy_lush">
-            <h5 className='text-1xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>Project 4 of 5:</span>{" "}
-              Dairy Lush Website
-            </h5>
-           </a>
-          </div>
-        </div>
-        <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-          <motion.img
-            initial={{ y: -300, opacity: 0 }}
-            transition={{ duration: 1.2 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            style={{ maxWidth: '280px', maxHeight: '100%' }}
-            src='dementia.png'
-            alt='Fitx app'
-          />
-          <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-           <a href="https://github.com/tamilarasanm26/Classification-of-dementia-disease-using-deep-learning-techniques">
-            <h5 className='text-1xl font-semibold text-center'>
-              <span className='underline decoration-[#F7AB0A]/50'>Project 5 of 5:</span>{" "}
-               Classification of dementia disease
-            </h5>
-           </a>
-          </div>
-        </div>
-
-        {/* Add more image tags for other projects */}
-
+        ))}
       </div>
-      <div className='w-full absolute top-1/2 transform -translate-y-1/2 bg-[#F7AB0A]/10 left-0 h-[200px] -skew-y-12 mt-15' />
+      <div className='w-full absolute top-1/2 transform -translate-y-1/2 bg-[#F7AB0B]/10 left-0 h-[200px] -skew-y-12 mt-15' />
+
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.3 }}
+            className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-30'
+          >
+            <div className='bg-[#F7AB0A] bg-opacity-30 backdrop-filter backdrop-blur-lg p-5 rounded-lg shadow-lg max-w-md w-full relative border border-[#F7AB0A] border-opacity-30'>
+              <button
+                className='absolute top-2 right-2 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center'
+                onClick={handleCloseCard}
+              >
+                &times;
+              </button>
+              <h3 className='text-2xl font-semibold mb-2'>{selectedProject.title}</h3>
+              <p className='mb-4'>{selectedProject.description}</p>
+              <a href={selectedProject.link} className='inline-block bg-[#F7AB0A] text-white py-2 px-4 rounded-lg shadow hover:bg-[#e39a00]'>
+                View Project
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }
