@@ -85,7 +85,7 @@ function Projects({}: Props) {
               src={project.imgSrc}
               alt={project.title}
               onClick={() => handleImageClick(project)}
-              className='cursor-pointer'
+              className='cursor-pointer animate-pulse'
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               {/* <a href={project.link}> */}
