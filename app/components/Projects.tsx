@@ -15,8 +15,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Book App',
-    description: 'Platform for book lovers to search for books based on genres, add favorite books, get the book buy 
-link, and access the e-book.',
+    description: 'Platform for book lovers to search for books based on genres, add favorite books, get the book buy link, and access the e-book.',
     imgSrc: '/book.png',
     link: 'https://github.com/tamilarasanm26/Bookapp.git',
   },
