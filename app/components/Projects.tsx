@@ -97,7 +97,7 @@ function Projects({}: Props) {
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               {/* <a href={project.link}> */}
                 <h5 className='text-1xl font-semibold text-center'>
-                  <span className='underline decoration-[#F7AB0A]/50'>Project {project.id} of 5:</span> {project.title}
+                  <span className='underline decoration-[#F7AB0A]/50'>Project {project.id} of 6:</span> {project.title}
                 </h5>
               {/* </a> */}
             </div>
