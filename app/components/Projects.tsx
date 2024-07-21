@@ -14,34 +14,42 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: 'Book App',
+    description: 'Platform for book lovers to search for books based on genres, add favorite books, get the book buy 
+link, and access the e-book.',
+    imgSrc: '/book.png',
+    link: 'https://github.com/tamilarasanm26/Bookapp.git',
+  },
+  {
+    id: 2,
     title: 'Language Learning App',
     description: 'A web application designed to help children to learn languages through interactive lessons and practices.',
     imgSrc: '/lang.png',
     link: 'https://github.com/tamilarasanm26/Language_Learning_application',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Simple Keyboard',
     description: 'A simple keyboard app for Android devices, offering customization and to protect device from fileless malware.',
     imgSrc: 'key.png',
     link: 'https://github.com/tamilarasanm26/Simple-keyboard',
   },
   {
-    id: 3,
+    id: 4,
     title: 'FITX Application',
     description: 'A fitx application is website for manage gym equipment and  that helps admin to monitor gym equipment.',
     imgSrc: 'fit.png',
     link: 'https://github.com/tamilarasanm26/FITX',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Dairy Lush Website',
     description: 'A website developed for a dairy business to manage their products and customer orders efficiently.',
     imgSrc: 'DL.png',
     link: 'https://github.com/VigneshKandasamyOfficial/dairy_lush',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Classification of Dementia Disease',
     description: 'Research and development project for classifying different stage dementia using deep learning techniques.',
     imgSrc: 'dementia.png',
