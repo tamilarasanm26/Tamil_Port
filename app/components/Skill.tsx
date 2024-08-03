@@ -18,7 +18,7 @@ function Skill({ directionLeft }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuANvhcmXlP_41PL4VxP38Vcsted42ZY5TBQ&s'
         className='rounded-full border border-gray-300 object-cover'
-        style={{ width: '4rem', height: '4rem', minWidth: '50px', minHeight: '50px' }} // Adjust size here
+        style={{ width: '4rem', height: '4rem', minWidth: '50px', minHeight: '50px' }}
       />
     </div>
   );
