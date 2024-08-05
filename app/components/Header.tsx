@@ -1,6 +1,6 @@
 'use client';
 import { SocialIcon } from 'react-social-icons';
-// Change import statement
+
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
