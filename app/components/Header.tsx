@@ -38,7 +38,7 @@ export default function Header() {
         fgColor='gray'
         bgColor='transparent'
         url="http://linkedin.com/in/tamilarasan-murugan-0b74a0248"
-         /> {/* Make sure to add http:// or https:// */}
+         /> 
         <SocialIcon
         fgColor='gray'
         bgColor='transparent'
