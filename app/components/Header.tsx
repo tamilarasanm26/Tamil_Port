@@ -33,7 +33,7 @@ export default function Header() {
         fgColor='gray'
         bgColor='transparent'
         url="http://github.com/tamilarasanm26"
-         /> {/* Make sure to add http:// or https:// */}
+         /> 
         <SocialIcon
         fgColor='gray'
         bgColor='transparent'
