@@ -42,6 +42,7 @@ I believe in the transformative power of technology to shape the world for the b
 
 Outside of coding, I enjoy exploring the latest trends in tech, diving into new projects, and continuously learning to stay ahead of the curve. </p>
         </div>
+      
     </motion.div>
   )
 }
