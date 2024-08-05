@@ -43,7 +43,7 @@ export default function Header() {
         fgColor='gray'
         bgColor='transparent'
         url="https://www.instagram.com/___tamill____/"
-         /> {/* Make sure to add http:// or https:// */}
+         /> 
         <SocialIcon
         fgColor='gray'
         bgColor='transparent'
