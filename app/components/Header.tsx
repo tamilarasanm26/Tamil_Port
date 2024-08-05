@@ -1,7 +1,7 @@
 'use client';
 import { SocialIcon } from 'react-social-icons';
 // Change import statement
-// import "./style.module.css";
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 //import { Social } from '../../../typings';
