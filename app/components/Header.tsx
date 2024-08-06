@@ -49,7 +49,7 @@ export default function Header() {
         bgColor='transparent'
         url="https://www.facebook.com/profile.php?id=100036620281385"
          /> 
-         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' download href="/TAMILARASAN Resume.pdf">
+         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' download href="/TAMILARASAN.pdf">
         CV
       </a>
       </motion.div>
