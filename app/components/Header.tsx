@@ -49,7 +49,7 @@ export default function Header() {
         bgColor='transparent'
         url="https://www.facebook.com/profile.php?id=100036620281385"
          /> 
-         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' download href="/TAMILARASAN.pdf">
+         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' href="https://firebasestorage.googleapis.com/v0/b/website-f58e6.appspot.com/o/TAMILARASAN%20RESUME.pdf?alt=media&token=90e89033-9966-4296-8e6e-25c7fe3199a6">
         CV
       </a>
       </motion.div>
