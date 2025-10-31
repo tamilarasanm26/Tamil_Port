@@ -30,7 +30,7 @@ const Skills = ({ directionLeft }: Props) => {
           { src: '/mys.jpeg', alt: 'MySQL' },
           { src: '/go.png', alt: 'Go' },
           { src: '/typst.jpg', alt: 'typst' },
-          { src: '/flutter.jpeg', alt: 'Flutter, style: { backgroundColor: 'white' } },
+          { src: '/flutter.jpeg', alt: 'Flutter', style: { backgroundColor: 'white' } },
         ].map(({ src, alt, style }) => (
           <motion.div
             key={alt}
