@@ -21,19 +21,15 @@ const Skills = ({ directionLeft }: Props) => {
       <br></br>
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 mt-16 md:mt-20">
         {[
-          { src: '/c.jpeg', alt: 'C' },
+         
           { src: '/ja.png', alt: 'Java' },
           { src: '/html.png', alt: 'HTML' },
           { src: '/css.png', alt: 'CSS' },
           { src: '/js.jpeg', alt: 'JavaScript' },
           { src: '/react.png', alt: 'React' },
-         { src: '/php.png', alt: 'PHP' },
-          { src: '/mongo.jpg', alt: 'MongoDB' },
           { src: '/mys.jpeg', alt: 'MySQL' },
-          { src: '/framer.png', alt: 'Framer' },
-          { src: '/next.png', alt: 'Next.js' },
-          { src: '/ts.png', alt: 'TypeScript' },
-          { src: '/ang.png', alt: 'Angular' },
+          { src: '/go.png', alt: 'Go' },
+          { src: '/typst.jpg', alt: 'typst' },
           { src: '/tailwind.png', alt: 'Tailwind CSS', style: { backgroundColor: 'white' } },
         ].map(({ src, alt, style }) => (
           <motion.div

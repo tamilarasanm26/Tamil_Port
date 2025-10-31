@@ -49,7 +49,7 @@ export default function Header() {
         bgColor='transparent'
         url="https://www.facebook.com/profile.php?id=100036620281385"
          /> 
-         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' href="https://firebasestorage.googleapis.com/v0/b/website-f58e6.appspot.com/o/TAMILARASAN_M_.pdf?alt=media&token=a40d1532-140a-4df5-80d4-4ade1feb9424">
+         <a className='text-2xl font-bold uppercase  md:inline-flex text-lg text-gray-500 ' href="https://firebasestorage.googleapis.com/v0/b/website-f58e6.appspot.com/o/Tamilarasan%20resume.pdf?alt=media&token=2b42c96d-61e0-4f71-b198-5c4cc7dc79f8">
         CV
       </a>
       </motion.div>
