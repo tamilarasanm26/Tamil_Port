@@ -29,9 +29,8 @@ const Experience = (props: Props) => {
         
         <div className='space-y-5 px-0 md:px-10'>
         <h5 className='text-lg md:text-2xl font-semibold'>
-                Here is a{" "} 
-            <span className='underline' style={{ textDecorationColor: '#F7AB0A' }}>little</span>{" "}
-            story</h5>
+            <span className='underline' style={{ textDecorationColor: '#F7AB0A' }}>Hexagram Fintech</span>{" "}
+            </h5>
             <p className='text-sm md:text-base text-justify'>
             
             I worked as a Software Developer at Hexagram Fintech, where I was responsible for developing and automating PDF generation systems for financial reports. My role involved using Go for backend development, Typst for designing dynamic and structured PDF layouts, and MySQL for managing and retrieving data efficiently. This experience helped me strengthen my problem-solving skills and gain a deeper understanding of building reliable, data-driven applications. </p>
