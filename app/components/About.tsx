@@ -34,13 +34,7 @@ const About = (props: Props) => {
             story</h5>
             <p className='text-sm md:text-base text-justify'>
             
-            I&apos;m Tamilarasan, a software developer with a long-standing passion for technology. Despite being an average student, I&apos;ve always been driven by my love for coding and problem-solving.
-
-In 2023, I had the honor of being a finalist in Kavach, a testament to my dedication and skills in the field. Through my journey, I&apos;ve developed expertise in various programming languages and technologies.
-
-I believe in the transformative power of technology to shape the world for the better. Every line of code I write is infused with the desire to create impactful solutions that make a difference.
-
-Outside of coding, I enjoy exploring the latest trends in tech, diving into new projects, and continuously learning to stay ahead of the curve. </p>
+            I&apos;m Tamilarasan,I’m Tamilarasan, a passionate software developer who loves turning ideas into meaningful digital experiences. I’m driven by curiosity and the desire to create things that make a difference. I enjoy learning, exploring new concepts, and solving problems through creative thinking. Beyond coding, I’m someone who values growth, teamwork, and continuous learning as I strive to improve and contribute to something impactful. </p>
         </div>
       
     </motion.div>
