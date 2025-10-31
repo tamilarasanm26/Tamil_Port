@@ -25,7 +25,7 @@ const About = (props: Props) => {
           }}
           whileInView={{opacity:1,x:0}}
           viewport={{once:true}}
-          className="-mb-16 md:mb-0 flex-shrink-0 w-44 h-44 md:w-56 md:h-56 rounded-full object-cover md:rounded-lg md:mt-8" src="/tamil2.jpg" alt="Your Image" />
+          className="-mb-16 md:mb-0 flex-shrink-0 w-44 h-44 md:w-56 md:h-56 rounded-full object-cover md:rounded-lg md:mt-8" src="/tamil_3.png" alt="Your Image" />
         
         <div className='space-y-5 px-0 md:px-10'>
         <h5 className='text-lg md:text-2xl font-semibold'>
@@ -34,7 +34,7 @@ const About = (props: Props) => {
             story</h5>
             <p className='text-sm md:text-base text-justify'>
             
-            I&apos;m Tamilarasan,I’m Tamilarasan, a passionate software developer who loves turning ideas into meaningful digital experiences. I’m driven by curiosity and the desire to create things that make a difference. I enjoy learning, exploring new concepts, and solving problems through creative thinking. Beyond coding, I’m someone who values growth, teamwork, and continuous learning as I strive to improve and contribute to something impactful. </p>
+            I’m Tamilarasan, a passionate software developer who loves turning ideas into meaningful digital experiences. I’m driven by curiosity and the desire to create things that make a difference. I enjoy learning, exploring new concepts, and solving problems through creative thinking. Beyond coding, I’m someone who values growth, teamwork, and continuous learning as I strive to improve and contribute to something impactful. </p>
         </div>
       
     </motion.div>
